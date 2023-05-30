@@ -1,4 +1,4 @@
-# Zombie Filler
+# Zombie Killer
 [APK](https://drive.google.com/file/d/1U59CqQhlH9vmP5sWslQEDpr-yxxZ-WXe/view?usp=sharing)
 
 ![Game](https://i.imgur.com/UMUHiI5.png)

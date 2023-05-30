@@ -52,7 +52,12 @@ namespace InventorySystem
             base.OnDeselect(null);
         }
 
-        private void UpdateAmount (Item item) => _stackAmount.text = _sItem.Amount.ToString();
+        private void UpdateAmount (Item item)
+        {
+            int count = _sItem.Amount;
+            _stack.SetActive(count > 1);
+            _stackAmount.text = count.ToString();
+        }
 
         protected override void DoStateTransition (SelectionState state, bool instant)
         {
