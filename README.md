@@ -30,9 +30,6 @@
 - для `StackableItem` можно выбрать количество удаляемых предметов
 - `ItemEquipment` можно экиперовать
 
-Реализация: `Game/Service/Inventory`
-Визуализация: `Game/GamplayUI/Inventory`
-
 ## Save/Load
 ![JsonHandler](https://i.imgur.com/3a2Gmmu.png)
 
