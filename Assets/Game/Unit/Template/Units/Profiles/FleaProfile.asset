@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d0601be8e5dc594187ff212200776d2, type: 3}
+  m_Name: FleaProfile
+  m_EditorClassIdentifier: 
+  _name: Flea
+  _baseStats:
+    values:
+    - type: 0
+      value: 6
+    - type: 2
+      value: 3
+    - type: 3
+      value: 100
+    - type: 5
+      value: 20
+  _skin: {fileID: 6507916395467406447, guid: 25ad324c1c2dcac44b793693be9a368d, type: 3}
+  _equipment:
+    items:
+    - {fileID: 11400000, guid: b6efe8355c581774c80c910462f5f3d2, type: 2}
+  _infinityAmmo: 1
+  _ammoAmount: []
+  _modelTemplate: {fileID: 449046502092873696, guid: 14ca36deb7758b8469d17079e87241a6, type: 3}
+  _dropTable:
+    blocks:
+    - name: Ammo
+      chance: 0.4
+      drop:
+      - drop: {fileID: 3776227916228029079, guid: 333ca53dbeac44a45a1c2de1ecf47646, type: 3}
+        factor: 3
+      - drop: {fileID: 8963240611977576987, guid: a56a8655be732bc4a9379b52de486900, type: 3}
+        factor: 2
+    - name: Junk
+      chance: 0.6
+      drop:
+      - drop: {fileID: 5747545361084915658, guid: 016e2908d79d2de4a8758512f00531e1, type: 3}
+        factor: 1
+      - drop: {fileID: 5490416420676243887, guid: 55365d10bdd8aa74f94914d52d85a4db, type: 3}
+        factor: 1

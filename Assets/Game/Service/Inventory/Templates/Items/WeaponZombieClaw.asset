@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b3bb5766959cf74385f6aa926125a7d, type: 3}
+  m_Name: WeaponZombieClaw
+  m_EditorClassIdentifier: 
+  _id: 1003
+  _name: Zombie Claw
+  _icon: {fileID: 21300000, guid: 10714470e0168e545bf027bad3c81edb, type: 3}
+  _slot: {fileID: 11400000, guid: 52b16fcd130855048b83ee1e010d83a8, type: 2}
+  _model: {fileID: 694627366466343342, guid: 1daf75a5baba11c4ab0a1afd35cd47a7, type: 3}

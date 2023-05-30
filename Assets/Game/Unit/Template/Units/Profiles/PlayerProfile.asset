@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa7da37f3f3a186449611da670b57cea, type: 3}
+  m_Name: PlayerProfile
+  m_EditorClassIdentifier: 
+  _name: Player
+  _baseStats:
+    values:
+    - type: 0
+      value: 7
+    - type: 1
+      value: 2
+    - type: 2
+      value: 5
+    - type: 3
+      value: 100
+    - type: 5
+      value: 50
+  _skin: {fileID: 287343598749765808, guid: 217d0139d25f5a44d8a12ace996b73a3, type: 3}
+  _infinityAmmo: 0
+  _modelTemplate: {fileID: 4843075005203413062, guid: b71faaf0d7aab5f4ba0a1604f38d5c3b, type: 3}
