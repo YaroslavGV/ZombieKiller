@@ -3,10 +3,10 @@
 
 ![Game](https://i.imgur.com/UMUHiI5.png)
 
-јссеты:
-Ч [Extenject](https://assetstore.unity.com/packages/tools/utilities/extenject-dependency-injection-ioc-157735)
-Ч [JSON Object](https://assetstore.unity.com/packages/tools/input-management/json-object-710)
-Ч [Fast IK](https://assetstore.unity.com/packages/tools/animation/fast-ik-139972)
+»спользуетс€ из AssetStore:
+- [Extenject](https://assetstore.unity.com/packages/tools/utilities/extenject-dependency-injection-ioc-157735)
+- [JSON Object](https://assetstore.unity.com/packages/tools/input-management/json-object-710)
+- [Fast IK](https://assetstore.unity.com/packages/tools/animation/fast-ik-139972)
 
 ## Map
 ![TileMap](https://i.imgur.com/6FR9O4t.png)
