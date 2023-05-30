@@ -16,7 +16,7 @@ namespace Weapon
             _viewHandler = viewHandler;
         }
 
-        public override void Remove ()
+        public override void RemoveView ()
         { 
         }
 

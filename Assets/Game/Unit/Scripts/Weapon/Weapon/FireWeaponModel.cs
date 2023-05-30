@@ -23,21 +23,22 @@ namespace Weapon
 
         private void OnDestroy ()
         {
-            Remove();
+            RemoveView();
         }
 
         public override void Initlialize (IAimDirection aimDirection, IItemViewHandler viewHandler)
         {
             _aimDirection = aimDirection;
             _viewHandler = viewHandler;
+            _bullets = _sceneBullets.AddUser(this);
+
             if (_viewTemplate != null)
                 _view = _viewHandler.SpawnView(_viewTemplate, _viewTemplate.ParentSkinPoint);
-            _bullets = _sceneBullets.AddUser(this);
         }
 
         public void SetAmmoBackpack (IAmmoBackpack backpack) => _ammoBackpack = backpack;
 
-        public override void Remove ()
+        public override void RemoveView ()
         {
             if (_view != null)
                 _viewHandler.RemoveView(_view);
@@ -64,7 +65,7 @@ namespace Weapon
                 if (_ammoBackpack.InfinityAmmo)
                     return true;
 
-                bool haveAmmo = _ammoBackpack.GetAmount(_usesAmmo) > count;
+                bool haveAmmo = _ammoBackpack.GetAmount(_usesAmmo) >= count;
                 if (haveAmmo)
                     _ammoBackpack.Spend(_usesAmmo);
                 return haveAmmo;

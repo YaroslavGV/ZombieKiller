@@ -22,7 +22,7 @@ namespace Weapon
         public void SetDamageSorce (IDamageSorce sorce) => _sorce = sorce;
 
         public abstract void Initlialize (IAimDirection aimDirection, IItemViewHandler viewHandler);
-        public abstract void Remove ();
+        public abstract void RemoveView ();
         public abstract void SetAttack (bool isAttacking);
         public virtual void StartAttack () => SetAttack(true);
         public virtual void StopAttack () => SetAttack(false);

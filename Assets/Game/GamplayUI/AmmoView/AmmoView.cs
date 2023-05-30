@@ -70,6 +70,7 @@ namespace Unit
                 {
                     _type.text = _weapon.UsesAmmo.ToString();
                     UpdatCount();
+                    _view.SetActive(true);
                 }
                 else
                 {
@@ -78,7 +79,9 @@ namespace Unit
                 }
             }
             else
+            {
                 _view.SetActive(false);
+            }
         }
 
         private void UpdatCount ()

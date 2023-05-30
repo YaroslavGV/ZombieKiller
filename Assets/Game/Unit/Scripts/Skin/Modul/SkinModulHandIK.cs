@@ -12,6 +12,7 @@ namespace Unit.Skin
 
         public override void OnSpawnView (Object view)
         {
+            StopAllCoroutines();
             if (view is IHandIK hik)
             {
                 SetTarget(_front, hik.FrontHandIK);
@@ -35,7 +36,7 @@ namespace Unit.Skin
 
         private void ImmediatelySetIK (FastIKFabric fabric, TargetIK ik)
         {
-            if (fabric.Target != null)
+            if (ik.target != null)
             {
                 fabric.Target = ik.target;
                 fabric.Pole = ik.pole;
@@ -58,6 +59,7 @@ namespace Unit.Skin
         {
             yield return new WaitForEndOfFrame();
             ImmediatelySetIK(fabric, ik);
+            yield return new WaitForEndOfFrame();
         }
 
         private IEnumerator DelayClearTarget (FastIKFabric fabric)

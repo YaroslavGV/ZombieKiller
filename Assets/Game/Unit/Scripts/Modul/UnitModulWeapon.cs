@@ -75,6 +75,7 @@ namespace Unit
         {
             if (item == _weaponItem)
             {
+                _weaponModel.RemoveView();
                 _weaponModel.RequireSkinAnimation -= PlayAnimation;
                 Destroy(_weaponModel);
                 _weaponModel = null;

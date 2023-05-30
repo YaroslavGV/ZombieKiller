@@ -19,6 +19,12 @@ namespace InventorySystem
 
         public Item Item => _item;
 
+        private void OnDestroy ()
+        {
+            if (_sItem != null)
+                _sItem.OnChange -= UpdateAmount;
+        }
+
         public void SeItem (Item item)
         {
             if (_item == item)
@@ -34,6 +40,7 @@ namespace InventorySystem
                 _sItem.OnChange += UpdateAmount;
                 UpdateAmount(null);
             }
+            name = "ItemView +"+item.Name;
         }
 
         // block auto deselect
@@ -54,9 +61,12 @@ namespace InventorySystem
 
         private void UpdateAmount (Item item)
         {
-            int count = _sItem.Amount;
-            _stack.SetActive(count > 1);
-            _stackAmount.text = count.ToString();
+            if (_sItem != null)
+            {
+                int count = _sItem.Amount;
+                _stack.SetActive(count > 1);
+                _stackAmount.text = count.ToString();
+            }
         }
 
         protected override void DoStateTransition (SelectionState state, bool instant)
